@@ -27,7 +27,7 @@ My favorite things about this project:
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:Emhato/emma-tonnessen-semester-project-2
+git clone https://github.com/EmmaTonnessen/the-green-tree-semester-project-2.git
 ```
 
 2. Install the dependencies:
