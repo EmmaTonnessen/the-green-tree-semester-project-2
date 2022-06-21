@@ -1,0 +1,650 @@
+body,
+html {
+  height: 100%;
+}
+
+main {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: #DED9D6;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-family: "Nanum Myeongjo", serif;
+  color: #204011;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-family: "Nanum Myeongjo", serif;
+  color: #204011;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-family: "Nanum Myeongjo", serif;
+  color: #000;
+  font-size: 1rem;
+}
+
+a:hover {
+  color: #DED9D6;
+}
+
+.nav {
+  background-color: #CBA590 !important;
+  height: 80px;
+}
+
+.nav__a {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 1.5rem;
+  color: #000 !important;
+}
+
+.nav__a--active {
+  color: #DED9D6 !important;
+}
+
+.nav__small {
+  background-color: #CBA590;
+  padding-left: 20px;
+}
+
+.nav__burger-icon {
+  color: #204011 !important;
+}
+
+.nav__burger-btn {
+  color: #204011 !important;
+  border: none;
+}
+
+.footer {
+  background-color: #CBA590;
+}
+
+.footer__wrapper {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__title {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 1rem;
+  border-bottom: 1px solid #204011;
+  margin-top: 20px;
+}
+
+.footer__text {
+  font-size: 0.8rem;
+  color: #000;
+}
+
+.footer__bottom-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__link {
+  font-family: "Nanum Myeongjo", serif;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.logout {
+  font-family: "Nanum Myeongjo", serif;
+  border: none;
+  background-color: #CBA590;
+  padding: 0;
+  margin: 0;
+}
+
+.logout:hover {
+  color: #DED9D6;
+}
+
+.edit-link {
+  font-family: "Nanum Myeongjo", serif;
+  color: #000;
+  margin-top: 10px;
+}
+
+.footer__admin-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer__wrapper {
+    margin: 30px;
+  }
+}
+
+.note, .error, .warning, .success {
+  text-align: center;
+  border: solid;
+  margin: 20px;
+  padding: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.note {
+  border-color: #859D79;
+}
+
+.error {
+  border-color: red;
+}
+
+.warning {
+  border-color: yellow;
+}
+
+.success {
+  border-color: #859D79;
+}
+
+.loader {
+  border-top: 4px solid #CBA590;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+  position: absolute;
+  left: 50%;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.edit__input {
+  width: 80%;
+  height: 40px;
+  border: none;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 2px 1px 6px;
+          box-shadow: 2px 1px 6px;
+}
+
+.edit__textarea {
+  height: 200px;
+}
+
+.edit__checkbox {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 0;
+}
+
+.edit__checkbox:checked {
+  color: #CBA590;
+}
+
+.edit__lable {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 1.3rem;
+}
+
+.edit__btn {
+  background-color: #859D79;
+  padding: 15px;
+  border: none;
+  border-radius: 30px 10px 30px 10px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Nanum Myeongjo", serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 60px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.edit__btn:hover {
+  color: #DED9D6;
+  background-color: #CBA590;
+}
+
+.product-image {
+  height: 230px;
+  width: 330px;
+  background-position: center;
+  background-size: cover;
+  border: solid 1px #204011;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.product-image:hover {
+  opacity: 50%;
+}
+
+.hero-image {
+  width: 100%;
+  height: 269px;
+  background-position: center;
+  background-size: cover;
+}
+
+.home-header, .tagline, .cta {
+  margin-left: 10px;
+}
+
+.home-header {
+  color: #859D79;
+  padding-top: 10px;
+}
+
+.tagline {
+  color: #DED9D6;
+  font-size: 1rem;
+  width: 200px;
+  margin-bottom: 40px;
+}
+
+.cta {
+  background-color: #859D79;
+  padding: 20px;
+  border-radius: 30px 10px 30px 10px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Nanum Myeongjo", serif;
+  -webkit-box-shadow: #859D79 0 1px 30px;
+          box-shadow: #859D79 0 1px 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  color: #DED9D6;
+  background-color: #CBA590;
+}
+
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title-price-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 330px;
+  margin-bottom: 40px;
+}
+
+.product-price {
+  font-family: "Nanum Myeongjo", serif;
+  color: #000;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .home-header, .tagline, .cta {
+    margin-left: 60px;
+  }
+  .home-header {
+    padding-top: 30px;
+  }
+  .tagline {
+    width: 350px;
+    margin-bottom: 50px;
+  }
+  .featured-container {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+  }
+}
+
+.filter-form {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.search {
+  font-family: "Nanum Myeongjo", serif;
+  border: none;
+  border-bottom: solid 1px #204011;
+  background-color: #DED9D6;
+  width: 150px;
+}
+
+.search::-webkit-input-placeholder {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.search:-ms-input-placeholder {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.search::-ms-input-placeholder {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.search::placeholder {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .products-container {
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+  }
+}
+
+.details-image {
+  height: 230px;
+  width: 330px;
+  background-size: cover;
+  background-position: center;
+  border: solid 1px #204011;
+}
+
+.add-item {
+  background-color: #859D79;
+  padding: 15px;
+  border: none;
+  border-radius: 30px 10px 30px 10px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Nanum Myeongjo", serif;
+  -webkit-box-shadow: #859D79 0 1px 30px;
+          box-shadow: #859D79 0 1px 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 60px;
+}
+
+.add-item:hover {
+  color: #DED9D6;
+  background-color: #CBA590;
+}
+
+.details-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+.image-wrapper {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.description-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.detail-price {
+  margin-left: 270px;
+}
+
+.product-description {
+  font-size: 1rem;
+  width: 80%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .details-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 50px auto;
+    width: 80%;
+  }
+  .details-image {
+    height: 400px;
+    width: 600px;
+  }
+}
+
+.cart-image {
+  height: 100px;
+  width: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.items-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 70px;
+}
+
+.view-price-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 150px;
+}
+
+.view-items {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 1rem;
+  color: #204011;
+}
+
+.view-items:hover {
+  color: #859D79;
+}
+
+.delete-item {
+  background-color: #859D79;
+  padding: 10px 15px 10px 15px;
+  border: none;
+  border-radius: 30px 10px 30px 10px;
+  color: #fff;
+  font-family: "Nanum Myeongjo", serif;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.delete-item:hover {
+  background-color: #204011;
+}
+
+.your-items {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.total {
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .items-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.login-input {
+  width: 300px;
+}
+
+.login-header {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.add-input {
+  width: 300px;
+}
+
+.add-header {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.direction {
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .add-input {
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

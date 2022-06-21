@@ -1,0 +1,21 @@
+.add-input {
+    width: 300px;
+}
+
+.add-header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.direction {
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: $desktop-widt) {
+    .add-input {
+        width: 60%;
+    }
+}

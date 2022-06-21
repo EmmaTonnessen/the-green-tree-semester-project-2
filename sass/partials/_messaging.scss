@@ -1,0 +1,24 @@
+.note, .error, .warning, .success {
+    text-align: center;
+    border: solid;
+    margin: 20px;
+    padding: 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+.note {
+    border-color: getColor(buttons);
+}
+
+.error {
+    border-color: red;
+}
+
+.warning {
+    border-color: yellow;
+}
+
+.success {
+ border-color: getColor(buttons);
+}

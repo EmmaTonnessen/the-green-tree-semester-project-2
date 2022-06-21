@@ -1,0 +1,28 @@
+p {
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-family: $header-font;
+    color: getColor(logo-color);
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-family: $header-font;
+    color: getColor(logo-color);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-family: $header-font;
+    color: getColor(dark);
+    font-size: 1rem;
+}
+
+a:hover {
+    color: getColor(background);
+}

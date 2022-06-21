@@ -1,0 +1,19 @@
+$body-font: 'Nanum Gothic', sans-serif;
+$header-font: 'Nanum Myeongjo', serif;
+
+
+$colors: (
+    logo-color: #204011,
+    buttons: #859D79,
+    nav: #CBA590,
+    background: #DED9D6,
+    dark: #000,
+);
+
+$tablet-width: 768px;
+$desktop-widt: 1024px;
+
+@function getColor($color) {
+    @return map-get($map: $colors, $key: $color);
+}
+

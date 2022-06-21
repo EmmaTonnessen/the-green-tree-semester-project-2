@@ -1,0 +1,1 @@
+export const urlBase = "https://semester-project-2-api.herokuapp.com"

@@ -1,0 +1,29 @@
+.nav {
+    background-color: getColor(nav) !important;
+    height: 80px;
+
+    &__a {
+        font-family: $header-font;
+        font-size: 1.5rem;
+        color: getColor(dark) !important;
+    }
+
+    &__a--active {
+        color: getColor(background) !important;
+
+    }
+    
+    &__small {
+        background-color: getColor(nav);
+        padding-left: 20px;
+    }
+
+    &__burger-icon {
+        color: getColor(logo-color) !important;
+    }
+    &__burger-btn {
+        color: getColor(logo-color) !important;
+        border: none;
+    }
+
+}
